@@ -1,9 +1,14 @@
 @extends('layouts.admin')
 @section('content')
 
+    @if(Session::has('deleted_user'))
+
+        <h3 class="bg-danger" >{{session('deleted_user')}}</h3>
+
+
+    @endif
+
 <h1>Users</h1>
-
-
 
     <table class="table">
         <thead>
