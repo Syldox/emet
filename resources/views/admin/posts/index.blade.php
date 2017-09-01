@@ -31,8 +31,8 @@
                     <td>{{$post->photo_id}}</td>
                     <td>{{$post->title}}</td>
                     <td>{{$post->body}}</td>
-                    <td>{{$post->created_at->difForHumans()}}</td>
-                    <td>{{$post->updated_at->difForHumans()}}</td>
+                    <td>{{$post->created_at->diffForHumans()}}</td>
+                    <td>{{$post->updated_at->diffForHumans()}}</td>
                 </tr>
             @endforeach
         @endif

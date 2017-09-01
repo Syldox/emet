@@ -13,4 +13,23 @@ class Post extends Model
         'body'
 
     ];
+
+
+    public function user(){
+
+        $this->belongsTo('App\user');
+    }
+
+
+
+    public function photo(){
+
+        $this->belongsTo('App\Photo');
+    }
+
+
+    public function category(){
+
+        $this->belongsTo('App\Post');
+    }
 }
