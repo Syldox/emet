@@ -53,7 +53,7 @@
 
                 <div class="form-group">
 
-                    {!! Form::submit(' Post', ['class'=>'btn btn-primary col-sm-6']) !!}
+                    {!! Form::submit('Update Post', ['class'=>'btn btn-primary col-sm-6']) !!}
 
                 </div>
 
