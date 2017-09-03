@@ -38,15 +38,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
         </div>
         <!-- /.navbar-header -->
 
         <ul class="nav navbar-nav navbar-right" style="    margin-right: 20px;">
             <!-- Authentication Links -->
             @if (Auth::guest())
-                <li><a href="{{ route('login') }}">Login</a></li>
-                <li><a href="{{ route('register') }}">Register</a></li>
+                <li><i class="fa fa-sign-in" aria-hidden="true"></i> <a href="{{ route('login') }}">Login</a></li>
+                <li><i class="fa fa-sign-in" aria-hidden="true"></i> <a href="{{ route('register') }}">Register</a></li>
             @else
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -58,6 +58,8 @@
                             <a href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
                                 Logout
                             </a>
 
@@ -89,7 +91,7 @@
                         <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Users<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Users<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="{{route('users.index')}}">All Users</a>
@@ -104,7 +106,7 @@
 
 
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Posts<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Posts<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="{{route('posts.index')}}">All Posts</a>
@@ -117,7 +119,7 @@
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Categories<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-list" aria-hidden="true"></i> Categories<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="panels-wells.html">All Categories</a>
@@ -130,7 +132,7 @@
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Media<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></i> Media<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="panels-wells.html">All Media</a>
