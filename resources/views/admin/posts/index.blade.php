@@ -27,7 +27,7 @@
                 <tr>
                     <td>{{$post->id}}</td>
                     <td><img height="50px" src="{{$post->photo ? $post->photo->file : '../images/Postholder.png'}}" alt=""></td>
-                    <td>{{$post->user_name}}</td>
+                    <td><a href="{{route('posts.edit', $post->id)}}">{{$post->user->name}}</a></td>
                     <td>{{$post->category ? $post->category->name : 'Uncategorized'}}</td>
                     <td>{{$post->title}}</td>
                     <td>{{$post->body}}</td>
