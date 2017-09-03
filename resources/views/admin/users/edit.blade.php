@@ -3,7 +3,12 @@
 
 
 @section('content')
+    @if(Session::has('deleted_user'))
 
+        <h3 class="bg-danger" >{{session('deleted_user')}}</h3>
+
+
+    @endif
 
     <h1>Edit Users</h1>
 
