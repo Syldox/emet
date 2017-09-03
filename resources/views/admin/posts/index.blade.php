@@ -26,9 +26,9 @@
             @foreach($posts as $post)
                 <tr>
                     <td>{{$post->id}}</td>
+                    <td><img height="50px" src="{{$post->photo ? $post->photo->file : '../images/Postholder.png'}}" alt=""></td>
                     <td>{{$post->user_name}}</td>
                     <td>{{$post->category_id}}</td>
-                    <td>{{$post->photo_id}}</td>
                     <td>{{$post->title}}</td>
                     <td>{{$post->body}}</td>
                     <td>{{$post->created_at->diffForHumans()}}</td>
