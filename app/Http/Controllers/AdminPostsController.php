@@ -49,12 +49,17 @@ class AdminPostsController extends Controller
 
         $file->move('images', $name);
 
-        $photo = Photo::crate(['file'=>$name]);
+        $photo = Photo::create(['file'=>$name]);
 
         $input ['photo_id'] = $photo->id;
 
         }
 
+
+        $user->posts()->create($input);
+
+
+        return redirect('/admin/posts');
 
     }
 
