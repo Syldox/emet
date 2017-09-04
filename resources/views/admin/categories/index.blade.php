@@ -50,8 +50,8 @@
                    @foreach($categories as $category)
                        <tr>
                            <td>{{$category->id}}</td>
-                           <td><a href="{{route('categories.edit', $category->id)}}">{{$category->name}}</a></td>
-                           <td>{{$category->created_at ? $category->created_at  ->diffForHumans() : 'No date'}}</td>
+                           <td><a class="badge" href="{{route('categories.edit', $category->id)}}">{{$category->name}}</a></td>
+                           <td><span class="label label-info">{{$category->created_at ? $category->created_at  ->diffForHumans() : 'No date'}}</span></td>
                        </tr>
                    @endforeach
                    </tbody>
