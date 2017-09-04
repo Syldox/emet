@@ -5,9 +5,10 @@
 @section('content')
 
 
-    <h1> All Categories</h1>
+
 
 <div class="col-sm-6">
+    <h1> Add Category</h1>
 
    <div class="well">
        {!! Form::open(['method'=>'POST','action'=>'AdminCategoriesController@store']) !!}
@@ -33,7 +34,10 @@
 </div>
 
 
+
     <div class="col-sm-6">
+
+        <h1> All Categories</h1>
        <div class="well">
            @if($categories)
 

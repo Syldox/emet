@@ -126,7 +126,7 @@
                                 <a href="{{route('categories.index')}}">Categories</a>
                             </li>
                             <li>
-                                <a href="{{route('categories.create')}}">Edit Category</a>
+                                {{--<a href="{{route('categories.edit')}}">Edit Category</a>--}}
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
