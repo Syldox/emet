@@ -119,6 +119,19 @@
                         <!-- /.nav-second-level -->
                     </li>
 
+
+
+                    <li>
+                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i></i> Comments<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{route('comments.index')}}">All Comments</a>
+                            </li>
+
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+
                     <li>
                         <a href=""><i class="fa fa-list" aria-hidden="true"></i> Categories<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
