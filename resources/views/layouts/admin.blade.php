@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a class="navbar-brand" href="{{('home')}}"><i class="fa fa-home" aria-hidden="true"></i> Admin</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -119,13 +119,13 @@
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-list" aria-hidden="true"></i> Categories<span class="fa arrow"></span></a>
+                        <a href=""><i class="fa fa-list" aria-hidden="true"></i> Categories<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="panels-wells.html">All Categories</a>
+                                <a href="{{route('categories.index')}}">Categories</a>
                             </li>
                             <li>
-                                <a href="buttons.html">Create Category</a>
+                                <a href="{{route('categories.create')}}">Edit Category</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
