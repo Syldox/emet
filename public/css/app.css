@@ -7678,4 +7678,8 @@ button.close {
   margin-top: 50px;
 }
 
+.comment-reply {
+  display: none;
+}
+
 /*# sourceMappingURL=app.css.map */

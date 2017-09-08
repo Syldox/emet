@@ -83,19 +83,27 @@
         @if(count($comment->replies) > 0)
 
             @foreach($comment->replies as $reply)
-            <!-- Nested Comment -->
-            <div class="media" id="nested-comment">
-                <a class="pull-left" href="#">
-                    <img height="50"  class="media-object" src="{{$reply->photo}}" alt="">
-                </a>
-                <div class="media-body">
-                    <h4 class="media-heading">{{$reply->author}}
-                        <small>{{$reply->created_at->diffForHumans()}}</small>
-                    </h4>
-                    <p>{{$reply->body}}</p>
-                </div>
 
-                {!! Form::open(['method'=>'POST','action'=>'CommentRepliesController@createReply']) !!}
+
+                    <!-- Nested Comment -->
+                    <div class="media" id="nested-comment">
+                        <a class="pull-left" href="#">
+                            <img height="50"  class="media-object" src="{{$reply->photo}}" alt="">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{$reply->author}}
+                                <small>{{$reply->created_at->diffForHumans()}}</small>
+                            </h4>
+                            <p>{{$reply->body}}</p>
+                        </div>
+
+                        <div class="comment-reply-container">
+
+                            <button class="toggle-reply btn btn-primary pull-right">Reply</button>
+
+                            <div class="comment-reply">
+
+                                    {!! Form::open(['method'=>'POST','action'=>'CommentRepliesController@createReply']) !!}
 
                                     <div class="form-group">
 
@@ -114,9 +122,13 @@
                                     </div>
 
 
-                {!! Form::close() !!}
-            </div>
-            <!-- End Nested Comment -->
+                                    {!! Form::close() !!}
+
+                            </div>
+
+                    </div>
+                    <!-- End Nested Comment -->
+                </div>
             @endforeach
 @endif
 
@@ -126,6 +138,15 @@
     @endforeach
     @endif
 
+    @stop
 
+@section('scripts')
+    <script>
+
+        $(".comment-reply-container .toggle-reply").click(function(){
+           $(this).next().slideToggle("slow")
+
+        });
+    </script>
 
     @stop
