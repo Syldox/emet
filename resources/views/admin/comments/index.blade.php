@@ -14,6 +14,8 @@
                 <th>Email</th>
                 <th>Body</th>
                 <th>Posts</th>
+                <th>Status</th>
+                <th>Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -25,6 +27,7 @@
                     <td>{{$comment->email}}</td>
                     <td>{{$comment->body}}</td>
                     <td><a href="{{route('home.post',$comment->post->id)}}"><span class="label label-info">View Post</span></a></td>
+                    <td><a href="{{route('replies.show', $comment->id)}}">View Replies</a></td>
 
                    <td>
 
