@@ -84,7 +84,7 @@
 
             @foreach($comment->replies as $reply)
 
-
+                    @if($reply->is_active == 1)
                     <!-- Nested Comment -->
                     <div class="media" id="nested-comment">
                         <a class="pull-left" href="#">
@@ -129,6 +129,13 @@
                     </div>
                     <!-- End Nested Comment -->
                 </div>
+
+                        @else
+
+
+                            <h1 class="text-center"><span class="label label-warning" >No Replies</span></h1>
+
+                    @endif
             @endforeach
 @endif
 
