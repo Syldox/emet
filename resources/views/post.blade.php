@@ -130,12 +130,13 @@
                     <!-- End Nested Comment -->
                 </div>
 
-                        @else
+            @else
 
 
-                            <h1 class="text-center"><span class="label label-warning" >No Replies</span></h1>
+                    <h1 class="text-center"><span class="label label-warning" >No Replies</span></h1>
 
-                    @endif
+            @endif
+
             @endforeach
 @endif
 
