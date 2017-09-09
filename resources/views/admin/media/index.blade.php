@@ -7,11 +7,26 @@
 
     <h1>Media</h1>
 
+    <form action="/delete/media" method="post" class="form-inline">
+       <div class="form-group">
+           <select name="checkBoxArray" id="" class="form-control">
+
+               <option value="delete"  class="form-control">Delete</option>
+
+           </select>
+       </div>
+       <div class="form-group">
+            <input type="submit" class="btn-primary form-control">
+       </div>
+
+
+
    <div class="well">
        @if($photos)
            <table class="table">
                <thead>
                <tr>
+                   <th><input type="checkbox" id="options"></th>
                    <th>Id</th>
                    <th>Media</th>
                    {{--<th>Name</th>--}}
@@ -21,6 +36,7 @@
                <tbody>
                @foreach($photos as $photo)
                    <tr>
+                       <td><input class="checkBoxes" type="checkbox"  name="checkBoxArray[]" value="{{$photo->id}}"></td>
                        <td>{{$photo->id}}</td>
                        <td><img height="50" src="{{$photo->file}}" alt=""></td>
                        {{--<td>{{$photo->name}}</td>--}}
@@ -44,8 +60,11 @@
                @endforeach
            </table>
 
+
        @endif
    </div>
+
+    </form>
 
 
 @endsection

@@ -99,4 +99,9 @@ class AdminMediasController extends Controller
 
 
     }
+
+    public function deleteMedia(Request $request){
+
+
+    }
 }
