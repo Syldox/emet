@@ -7,20 +7,20 @@
 
     <h1>Media</h1>
 
-    <form action="/delete/media" method="post" class="form-inline">
+    <form action="delete/media" method="post" class="form-inline">
 
         {{csrf_field()}}
-        {{csrf_field('delete')}}
+        {{method_field('delete')}}
 
        <div class="form-group">
            <select name="checkBoxArray" id="" class="form-control">
 
-               <option value="delete"  class="form-control">Delete</option>
+               <option value=""  class="form-control">Delete</option>
 
            </select>
        </div>
        <div class="form-group">
-            <input type="submit" class="btn-primary form-control">
+            <input type="submit" name="delete_all" class="btn-primary form-control">
        </div>
 
 
@@ -47,16 +47,16 @@
                        <td>{{$photo->created_at ? $photo->created_at : 'No date'}}</td>
                        <td>
 
-                           {!! Form::open(['method'=>'DELETE','action'=>['AdminMediasController@destroy',$photo->id]]) !!}
+                           <input type="hidden" name="photo" value="{{$photo->id}}">
 
+                                
                                    <div class="form-group">
 
-                                       {!! Form::submit('Delete Post', ['class'=>'btn btn-danger']) !!}
+                                       <input type="submit" name="delete_single" value="Delete" class="btn btn-danger">
 
                                    </div>
 
 
-                           {!! Form::close() !!}
 
                        </td>
                    </tr>
@@ -73,6 +73,7 @@
 @endsection
 
 @section('scripts')
+
     <script>
         $(document).ready(function(){
 
@@ -91,11 +92,8 @@
                         this.checked = false;
 
                     })
-
                 }
-
            });
-
         });
     </script>
 
