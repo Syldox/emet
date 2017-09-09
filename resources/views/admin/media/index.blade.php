@@ -8,6 +8,10 @@
     <h1>Media</h1>
 
     <form action="/delete/media" method="post" class="form-inline">
+
+        {{csrf_field()}}
+        {{csrf_field('delete')}}
+
        <div class="form-group">
            <select name="checkBoxArray" id="" class="form-control">
 
@@ -21,7 +25,7 @@
 
 
 
-   <div class="well">
+   <div class="well" style="margin-top: 10px">
        @if($photos)
            <table class="table">
                <thead>
