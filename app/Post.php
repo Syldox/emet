@@ -1,34 +1,16 @@
 <?php
 
 namespace App;
+
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
-use Cviebrock\EloquentSluggable\Sluggable;
-
 
 class Post extends Model
 {
 
-
     use Sluggable;
     use SluggableScopeHelpers;
-
-
-    /**
-     * Sluggable configuration.
-     *
-     * @var array
-     */
-    public function sluggable() {
-        return [
-            'slug' => [
-                'source' => 'title',
-                'onUpdate' => true,
-            ],
-
-        ];
-    }
-
 
 
 
@@ -39,6 +21,20 @@ class Post extends Model
         'body'
 
     ];
+
+
+
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
+
+
+
 
 
     public function user(){
