@@ -1,0 +1,347 @@
+body{
+
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+}
+
+
+.sliding{
+    margin-top: 10px;
+    margin-right: -163px;
+    margin-left: -153px;
+}
+
+.nav-btno{
+    margin-top: -10px;
+}
+
+.btn-orange{
+    background-color: #f5861a;
+    color: #fff;
+
+}
+
+.btn-create-post{
+    float: left;
+
+}
+
+.btn-border{
+    border-color: #f5861a;
+}
+.post-btn{
+    margin-top: 18px;
+
+}
+.form-spacing-top{
+    margin-top: 10px;
+
+}
+
+#contact{
+    padding-top:20px;
+}
+
+/*footer section*/
+
+footer {
+    /* just for demo */
+    background-color: #080808;
+    color: #fff;
+    /*border-top: 1px solid #E7E7E7;*/
+    border-color: #101010;
+    border-radius: 4px;
+    text-align:center;
+    padding:20px;
+
+    /* just for demo */
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+
+/*post form*/
+
+.require {
+    color: #666;
+}
+label small {
+    color: #999;
+    font-weight: normal;
+}
+/*navbar*/
+
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+
+.navbar-brand { position: relative; z-index: 2; }
+
+.navbar-nav.navbar-right .btn {
+    position: relative;
+    z-index: 2;
+    padding: 4px 20px;
+    margin: 10px auto;
+    transition: transform 0.3s;
+}
+
+.navbar .navbar-collapse { position: relative; overflow: hidden !important; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+    background-color: rgb(245, 134, 26);
+    border-color: rgb(231, 227, 239);
+    color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+    height: auto !important;
+    transition: transform 0.3s;
+    transform: translate(0px,-50px);
+}
+.navbar.navbar-default .nav-collapse.in,
+.navbar.navbar-inverse .nav-collapse.in {
+    transform: translate(0px,0px);
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; }
+
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+
+    .navbar.navbar-default .nav-collapse,
+    .navbar.navbar-inverse .nav-collapse {
+        transform: translate(-100%,0px);
+    }
+    .navbar.navbar-default .nav-collapse.in,
+    .navbar.navbar-inverse .nav-collapse.in {
+        transform: translate(0px,0px);
+    }
+
+    .navbar.navbar-default .nav-collapse.slide-down,
+    .navbar.navbar-inverse .nav-collapse.slide-down {
+        transform: translate(0px,-100%);
+    }
+    .navbar.navbar-default .nav-collapse.in.slide-down,
+    .navbar.navbar-inverse .nav-collapse.in.slide-down {
+        transform: translate(0px,0px);
+    }
+}
+/*navbar*/
+#navim{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*icon rotate navbar logo */
+
+.logo{
+
+
+    /*  padding: 5px;*/
+    /*border-radius: 50%;*/
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+.logi-home:hover {
+    color: #fff;
+    text-shadow: 0 0 100px ,
+    0 0 100px #666,
+    0 0 100px #666,
+    0 0 100px #666,
+    0 0 100px #666,
+    0 0 50px #000,
+    0 0 50px #000,
+    0 0 50px #000,
+    0 0 50px #000,
+    0 0 50px #000;
+    /*transition*/
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 2.5s ease-in-out infinite alternate;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+
+}
+
+/*slider */
+
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+/*navbar*/
+
+
+.navborder{
+    border-bottom-color: #f5861a !important;
+    border-style: solid;
+
+}
+.carborder{
+    border-color: #f5861a !important;
+    border-style: solid;
+}
+
+/*carousel*/
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    height: 400px;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1;
+}
+
+.author-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+
+}
+
+.comment{
+    margin-bottom: 45px;
+}
+
+.author-name{
+    float: left;
+    margin-left:15px;
+}
+
+.author-name h4{
+    margin:5px 0px ;
+
+}
+
+.author-time{
+    font-size: 11px;
+    font-style: italic;
+    color: #aaa;
+}
+
+.comment-content{
+    clear: both;
+    margin-left: 65px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+
+
+/*comment badge style*/
+
+
+.badge {
+    padding: 1px 9px 2px;
+    font-size: 12.025px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #999999;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+.badge:hover {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.badge-error {
+    background-color: #b94a48;
+}
+.badge-error:hover {
+    background-color: #953b39;
+}
+.badge-warning {
+    background-color: #f89406;
+}
+.badge-warning:hover {
+    background-color: #c67605;
+}
+.badge-success {
+    background-color: #468847;
+}
+.badge-success:hover {
+    background-color: #356635;
+}
+.badge-info {
+    background-color: #3a87ad;
+}
+.badge-info:hover {
+    background-color: #2d6987;
+}
+.badge-inverse {
+    background-color: #333333;
+}
+.badge-inverse:hover {
+    background-color: #1a1a1a;
+}
+
+.comment-title{
+margin-bottom: 35px;
+
+}
+
+/*comment section */
+
+
+
+
+
+
+
+
+
+

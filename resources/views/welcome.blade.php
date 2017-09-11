@@ -1,95 +1,116 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
+@section('title', '| Home')
 
-        <title>Laravel</title>
+@section('content')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    {{--<div class="jumbotron">--}}
+    {{--<h1 class="displa">Welcome To My Bolg!</h1>--}}
+    {{--<p class="lead">Thank you for visiting.</p>--}}
+    {{--<hr class="my-4">--}}
+    {{--<p>This is My blog site created with Laravel.</p>--}}
+    {{--<p class="lead">--}}
+    {{--<a class="btn btn-warning btn-lg btn-orange" href="#" role="button" onclick="valid()">Popular Post</a>--}}
+    {{--</p>--}}
+    {{--</div>--}}
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid #f0ad4e">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item"> <img src="images/promo/orangeb1.jpg" style="width:100%" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        {{--<h1>Reparer Vos Ordinateurs </h1>--}}
+                        {{--<p>Nous Maintenons Vos Machines en vie </p>--}}
+                        {{--<p><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>--}}
+                    </div>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            </div>
+            <div class="item"> <img src="images/promo/orange-1.jpg" style="width:100%" data-src="" alt="Second    slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        {{--<h1>Repareation Smarte Phones </h1>--}}
+                        {{--<p>Vous avez un Probleme avec Votre Smart Phones ?--}}
+                        {{--<br> Ne paniquez pas Nous Avons la Solution</p>--}}
+                        {{--<p><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>--}}
+                    </div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+            </div>
+            <div class="item active"> <img src="images/promo/orangeb1.jpg" style="width:100%" data-src="" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        {{--<h1>Maintenance et Service</h1>--}}
+                        {{--<p>Le bien Fonctionement de vos Machine Nous est Prioritaire </p>--}}
+                        {{--<p><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>--}}
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <!-- ...................................................featured Products................................................... -->
+    {{--<div class="main-text hidden-xs">--}}
+    {{--<div class="col-md-12 text-center">--}}
+    {{--<h1>--}}
+    {{--Static Headline And Content</h1>--}}
+    {{--<h3>--}}
+    {{--Lorem ipsum dolor sit amet, consectetur adipiscing elit.--}}
+    {{--</h3>--}}
+    {{--<div class="">--}}
+    {{--<a class="btn btn-clear btn-sm btn-min-block" href="http://www.jquery2dotnet.com/">Login</a><a class="btn btn-clear btn-sm btn-min-block"--}}
+    {{--href="http://www.jquery2dotnet.com/">Registration</a></div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+
+    <div id="push"></div>{{--end slider --}}
+
+    <div class="row">
+
+        {{--<div class="col-md-8">--}}
+            {{--@foreach($posts as $post)--}}
+                {{--<div class="post">--}}
+                    {{--<h3>{{$post->title}}</h3>--}}
+                    {{--<p>{{substr(strip_tags($post->body), 0, 300)}}{{strlen(strip_tags($post->body)) >300 ? "..." : ""}}</p>--}}
+                    {{--<a href="{{url('blog/'.$post->slug)}}" class="btn btn-warning btn-orange">Read More</a>--}}
+                {{--</div>--}}
+                {{--<hr>--}}
+            {{--@endforeach--}}
+        {{--</div>--}}
+        {{--side bar--}}
+        <div class="col-md-12 ">
+
+                <hr>
+
+        </div>
+        {{--end sidebar--}}
+
+
+
+
+    </div>
+
+    <div class="container" style="margin-top: 100px">
+        <div class="carousel-caption">
+            {{--<h1>Maintenance et Service</h1>--}}
+            {{--<p>Le bien Fonctionement de vos Machine Nous est Prioritaire </p>--}}
+            <p><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>
+        </div>
+    </div>
+    {{--test script for sweet Alert --}}
+
+    <script type="text/javascript">
+        function valid() {
+            swal({
+                title: "Sweet ;)",
+                text: "Click below to create an account.",
+                imageUrl: "../../images/user.png"
+            });
+            document.getElementById("momo").href = "http://blog.dev/login";
+        }
+    </script>
+
+@endsection

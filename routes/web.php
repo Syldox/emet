@@ -18,7 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/post/{id}', ['as'=>'home.post','uses'=>'AdminPostsController@post']);
+
+Route::get('blog/{slug}', ['as'=> 'blog.single','uses' =>'BlogController@getSingle'])->where('slug', '[\w\d\-\_]+');
+Route::get('blog',['uses'=>'BlogController@getIndex', 'as'=>'blog.index']);
+
+
+Route::get('/about', 'pagesController@about');
+
+Route::get('/contact', 'pagesController@getContact');
+Route::post('/contact', 'pagesController@postContact');
 
 
 
@@ -28,6 +38,7 @@ Route::group(['middleware'=>'admin'], function(){
 
         return view('admin.index');
     });
+    Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 
 
     Route::resource('/admin/users' , 'AdminUsersController');
