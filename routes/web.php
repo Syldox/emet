@@ -11,6 +11,9 @@
 |
 */
 
+use App\Post;
+use Illuminate\Support\Facades\Input;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -29,6 +32,12 @@ Route::get('/about', 'pagesController@about');
 
 Route::get('/contact', 'pagesController@getContact');
 Route::post('/contact', 'pagesController@postContact');
+
+
+
+
+
+Route::get('/search', ['as'=>'search','uses'=> 'SearchController@search']);
 
 
 

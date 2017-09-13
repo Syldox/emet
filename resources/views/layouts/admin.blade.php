@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{('home')}}"><i class="fa fa-home" aria-hidden="true"></i> Admin</a>
+            <a class="navbar-brand" href="{{('/')}}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
         </div>
         <!-- /.navbar-header -->
 

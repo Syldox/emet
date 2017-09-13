@@ -74,15 +74,37 @@
 
                 </ul>
                 <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search" />
-                        </div>
-                        <button type="submit" class="btn btn-warning  btn-circle" style="background-color: #f5861a;z-index: 2;padding: 4px 10px;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                    </form>
+
+                    {!! Form::open(['method'=>'GET','action'=>'SearchController@search','class'=>'navbar-form navbar-right','role'=>'search']) !!}
+
+                    {{ csrf_field() }}
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search"  name="q"/>
+                    </div>
+                    <button type="submit" class="btn btn-warning  btn-circle" style="background-color: #f5861a;z-index: 2;padding: 4px 10px;"><span class="glyphicon glyphicon-search" aria-hidden="true" id="searching_for"></span></button>
+
+
+                    {!! Form::close() !!}
+
+
+
+
                 </div>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
 </div><!-- /.container-fluid -->
 
+
+<script>
+
+    var search_bar = $('#searching_for');
+    search_bar.on('keypress',function (e) {
+        if(e.which == 13){
+            if(search_bar.val() != "")
+
+                window.location = "/search/"+encodeURIComponent(search_bar.val());
+        }
+    });
+
+</script>

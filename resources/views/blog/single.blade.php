@@ -76,7 +76,7 @@
             <div class="well">
                 <h4>Blog Search</h4>
                 <div class="input-group">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="searching_for">
                     <span class="input-group-btn">
                             <button class="btn btn-default" type="button">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -221,5 +221,18 @@
 
         {{--</div>--}}
     {{--</div>--}}
+
+    <script>
+        var search_bar = $('#searching_for');
+        search_bar.on('keypress',function (e) {
+            if(e.which == 13){
+                if(search_bar.val() != " ")
+
+                    window.location = "/search/"+encodeURIComponent(search_bar.val());
+            }
+        })
+
+
+    </script>
 
 @endsection

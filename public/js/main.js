@@ -30,6 +30,12 @@ tinymce.init({
 
 });
 
-
-
+// var search_bar = $('#searching_for');
+// search_bar.on('keypress',function (e) {
+//     if(e.which == 13){
+//         if(search_bar.val() != "")
+//
+//             window.location = "/search/"+encodeURIComponent(search_bar.val());
+//     }
+// });
 
