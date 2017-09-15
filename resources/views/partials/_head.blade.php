@@ -15,8 +15,8 @@
     {{--<script src="../../../js/tinymce.min.js"></script>--}}
     {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>--}}
     @yield('stylesheets')
+        <link rel="shortcut icon"  href="{{ asset('images/orange-ico.jpg') }}">
     <title>
-        {{--<img alt="Brand" src="../images/icon.png">--}}
         Blog @yield('title')
 
     </title>

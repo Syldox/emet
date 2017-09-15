@@ -11,6 +11,7 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.2.0",
+        "spatie/laravel-analytics": "^1.4",
         "unisharp/laravel-filemanager": "^1.8"
     },
     "require-dev": {

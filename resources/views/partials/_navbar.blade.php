@@ -79,7 +79,7 @@
 
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search"  name="q"/>
+                        <input type="text" class="form-control" placeholder="Search" name="q"/>
                     </div>
                     <button type="submit" class="btn btn-warning  btn-circle" style="background-color: #f5861a;z-index: 2;padding: 4px 10px;"><span class="glyphicon glyphicon-search" aria-hidden="true" id="searching_for"></span></button>
 

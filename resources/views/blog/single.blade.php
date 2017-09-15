@@ -76,12 +76,16 @@
             <div class="well">
                 <h4>Blog Search</h4>
                 <div class="input-group">
-                    <input type="text" class="form-control" id="searching_for">
-                    <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
+                    {!! Form::open(['method'=>'GET','action'=>'SearchController@search','class'=>'navbar-form navbar-right','role'=>'search']) !!}
+
+                    {{ csrf_field() }}
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q"/>
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true" id="searching_for"></span></button>
+
+
+                    {!! Form::close() !!}
                 </div>
                 <!-- /.input-group -->
             </div>

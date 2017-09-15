@@ -1,23 +1,25 @@
 @extends('layouts.main')
 @section('title', '| Search')
 @section('content')
-
-
-    <h1 class="text-center"> Search Results!
-
-
-        <br>
-
-        <small>
-           <b>For:</b> {{$query}}
-        </small>
-
-    </h1>
-
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
 
         @if($details->count())
+
+            <div class="well">
+
+                <h1 class="text-center"><i class="fa fa-search" aria-hidden="true"> Search Results!</i>
+
+
+                    <br>
+
+                    <small>
+                        <b>For :</b> {{$query}}
+                    </small>
+
+                </h1>
+
+            </div>
 
             @foreach($details as $post )
 
@@ -42,29 +44,31 @@
 
                 </div>
 
-                <hr style="padding-top: 10px; margin-left: -70px">
+                <hr>
 
             @endforeach
 
         @else
 
-            <h2 class="text-center">
+            <div class="well">
 
-                :-/ Ops Sorry No Search Results!
+                <h1 class="text-center"><i class="fa fa-search" aria-hidden="true"> No Results!</i>
 
-            </h2>
+
+                    <br>
+
+                    <small>
+                        <b>For :</b> {{$query}}
+                    </small>
+
+                </h1>
+
+            </div>
 
         @endif
 
     </div>
 
 </div>
-
-
-
-
-
-
-
 
 @endsection
