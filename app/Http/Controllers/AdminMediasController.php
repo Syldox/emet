@@ -14,7 +14,9 @@ class AdminMediasController extends Controller
      */
     public function index()
     {
-        $photos = Photo::all();
+
+        $photos =Photo::paginate(5);
+//        $photos = Photo::all();
         return view('admin.media.index', compact('photos'));
     }
 

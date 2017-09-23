@@ -29,12 +29,10 @@ Route::get('blog',['uses'=>'BlogController@getIndex', 'as'=>'blog.index']);
 
 
 Route::get('/about', 'pagesController@about');
+Route::get('/pub', 'pagesController@pub');
 
 Route::get('/contact', 'pagesController@getContact');
 Route::post('/contact', 'pagesController@postContact');
-
-
-
 
 
 Route::get('/search', ['as'=>'search','uses'=> 'SearchController@search']);

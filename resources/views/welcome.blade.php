@@ -102,15 +102,20 @@
     </div>
     {{--test script for sweet Alert --}}
 
-    <script type="text/javascript">
-        function valid() {
-            swal({
-                title: "Sweet ;)",
-                text: "Click below to create an account.",
-                imageUrl: "../../images/user.png"
-            });
-            document.getElementById("momo").href = "http://blog.dev/login";
-        }
-    </script>
+
+
+
+
+
+    {{--<script type="text/javascript">--}}
+        {{--function valid() {--}}
+            {{--swal({--}}
+                {{--title: "Sweet ;)",--}}
+                {{--text: "Click below to create an account.",--}}
+                {{--imageUrl: "../../images/user.png"--}}
+            {{--});--}}
+            {{--document.getElementById("momo").href = "http://blog.dev/login";--}}
+        {{--}--}}
+    {{--</script>--}}
 
 @endsection

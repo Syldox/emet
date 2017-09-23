@@ -18,6 +18,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/"><i class="fa fa-home" aria-hidden="true"> Home</i></a></li>
                     <li><a href="/blog"><i class="fa fa-rss" aria-hidden="true"> Blog</i></a></li>
+                    <li><a href="/pub"><i class="fa fa-youtube-play" aria-hidden="true"> Pub</i></a></li>
                     <li><a href="/about"><i class="fa fa-map-marker" aria-hidden="true"> About</i></a></li>
                     {{--<li><a href="#">Services</a></li>--}}
                     {{--<li><a href="#">Works</a></li>--}}
@@ -79,7 +80,7 @@
 
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search" name="q"/>
+                        <input style="width: 300px" type="text" class="form-control" placeholder="Search" name="q"/>
                     </div>
                     <button type="submit" class="btn btn-warning  btn-circle" style="background-color: #f5861a;z-index: 2;padding: 4px 10px;"><span class="glyphicon glyphicon-search" aria-hidden="true" id="searching_for"></span></button>
 

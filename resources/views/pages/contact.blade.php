@@ -5,16 +5,6 @@
 
     <h1>Contact Me</h1>
     <hr>
-    {{--<div class="jumbotron jumbotron-sm">--}}
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-sm-12 col-lg-12">--}}
-                    {{--<h1 class="h1">--}}
-                        {{--Contact us <small>Feel free to contact us</small></h1>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
     <div class="container col-md-12">
         <div class="row">
             <div class="col-md-8">
@@ -23,11 +13,6 @@
                         {{csrf_field()}}
                         <div class="row">
                             <div class="col-md-6">
-                                {{--<div class="form-group">--}}
-                                    {{--<label for="name">--}}
-                                        {{--Name</label>--}}
-                                    {{--<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" name="name" />--}}
-                                {{--</div>--}}
                                 <div class="form-group">
                                     <label for="email">
                                         Email Address</label>
@@ -76,7 +61,6 @@
                         +223 44 99 99 03
                     </address>
                     <address>
-                        {{--<strong>Orange Mali Aci 2000</strong><br>--}}
                         <a href="mailto:#">OrangeMali@gmail.com</a>
                     </address>
                 </form>

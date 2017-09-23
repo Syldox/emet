@@ -19,6 +19,10 @@ class pagesController extends Controller
         return view('pages.about');
     }
 
+    public function pub(){
+        return view('pages.pub');
+    }
+
     public function getContact(){
         return view('pages.contact');
     }
