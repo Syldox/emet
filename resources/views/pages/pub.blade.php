@@ -40,11 +40,15 @@
 
                 <iframe src="https://youtube.com/embed"
 
-                        <?php echo $playlist->items[0]->snippet->resourceId->videoId;?>
+                        <?php echo
+                        $playlist->items[0]->snippet->resourceId->videoId;
+
+                        ?>
 
                         frameborder="0" allowfullscreen="" width="100%" height="450px"></iframe>
 
                 <hr>
+
 
                 <div class="container" style="width: 700px; margin-right: 150px">
 

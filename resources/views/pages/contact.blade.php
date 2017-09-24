@@ -67,4 +67,30 @@
             </div>
         </div>
     </div>
+
+
+
+    <h1>Google Map</h1>
+
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+
+            var options ={
+
+                zoom:8,
+                center:{lat:12.6500000,lng:-8.0000000}
+            }
+
+            var map = new
+            google.maps.Map(document.getElementById('map'),options);
+
+
+        }
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGkrBAgjF9LYMsVpgWyVZ_PhHWULDdpng&callback=initMap">
+    </script>
 @endsection
