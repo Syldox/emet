@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        {{--@include('partials._footer')--}}
+        @include('partials._footer')
         @include('partials._javascript')
 
     </body>

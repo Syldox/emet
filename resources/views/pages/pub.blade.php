@@ -31,6 +31,8 @@
     $api_url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId='. $playlist_id . '&key=' . $api_key;
 
     $playlist = json_decode(file_get_contents($api_url));
+
+
     ?>
 
 
@@ -48,6 +50,14 @@
                         frameborder="0" allowfullscreen="" width="100%" height="450px"></iframe>
 
                 <hr>
+
+                <h4 id="videoTitle"></h4>
+                <span id="videoViews" ></span>
+                <span id="videoLikes" ></span>
+                <span id="videoDislikes" ></span>
+                <span id="videoComments" ></span>
+                
+
 
 
                 <div class="container" style="width: 700px; margin-right: 150px">
@@ -80,7 +90,7 @@
 
             </div>
 
-            <div class="col-xs-12 col-md-4 col-sm-4 well" style="padding:0px;background-color: #cc;">
+            <div class="col-xs-12 col-md-4 col-sm-4" style="padding:0px;background-color: #cc; overflow-y: auto; height: 450px ">
                 <ul style="padding: 0px;">
 
 
@@ -94,11 +104,18 @@
                     $videoId = $video->snippet->resourceId->videoId;
                     $date= $video ->snippet->publishedAt;
 
+                    $JSON = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=".$videoId."&key=".$api_key);
+                    $json_data = json_decode($JSON, true);
+
+                    $views= $json_data['items'][0]['statistics']['viewCount'];
+                    $likes= $json_data['items'][0]['statistics']['likeCount'];
+                    $dislikes= $json_data['items'][0]['statistics']['dislikeCount'];
+                    $comments= $json_data['items'][0]['statistics']['commentCount'];
                     ?>
 
-                    <li>
+                    <li class="videoItem">
 
-                            <span style="cursor:pointer;margin-bottom:10px;" onclick="switchVideo('<?php  echo $videoId; ?>');" >
+                            <span style="cursor:pointer;margin-bottom:10px;" onclick="switchVideo('<?php  echo $videoId; ?>','<?php  echo str_replace('\'','`', $title); ?>','<?php  echo $views ?>','<?php  echo $likes ?>','<?php  echo $dislikes ?>','<?php  echo $comments ?>');" >
 
                                 <div class="col-xs-12" id="vid-<?php echo $videoId; ?>" style="padding-right:0px; padding-top:8px; padding-bottom: 8px; border-bottom: 1px solid white;">
                                     <div style="padding-left:0px" class="image col-md-4 col-lg-4">
@@ -125,14 +142,23 @@
     </div>
 
 
-
+    <script src="../../../js/jquery.min.js"></script>
     <script>
 
-        $("#vid-<?php echo $playlist->items[0]->snippet->resourceId->videoId;?>").addClass('selected');
-        function switchVideo(videoId) {
+
+        function switchVideo(videoId, videoTitle, views, likes, dislikes, comments) {
+//            var stats = JSON.parse( statsObj);
+
             $(".video-container iframe").attr('src','https://www.youtube.com/embed/'+videoId);
             $(".selected").removeClass('selected');
             $("#vid-"+videoId).addClass('selected');
+            $("#videoTitle").text(videoTitle);
+
+            $("#videoViews").text(views+' views');
+            $("#videoLikes").text(likes+' likes');
+            $("#videoDislikes").text(dislikes+' dislikes');
+            $("#videoComments").text(comments+' comments');
+
         }
 
 

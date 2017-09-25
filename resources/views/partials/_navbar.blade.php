@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a  class="navbar-brand logi-home" href="/"><i class="fa fa-home" aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px; color:#f5861a"><img alt="Brand" src="../../images/icon.png" style="width: 50px;float: right;" class="logo"> Orange Mali</i></a>
+                <a  class="navbar-brand logi-home" href="/"><i class="fa fa-home" aria-hidden="true" href="#page-top" style="margin-left: -90px;margin-top: -90px; color:#ff6601"><img alt="Brand" src="../../images/promo/orange_logo.jpg" style="width: 50px;float: right; border-radius: 10px;margin-left: 2px" class="logo"> Orange Mali</i></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -82,7 +82,7 @@
                     <div class="form-group">
                         <input style="width: 300px" type="text" class="form-control" placeholder="Search" name="q"/>
                     </div>
-                    <button type="submit" class="btn btn-warning  btn-circle" style="background-color: #f5861a;z-index: 2;padding: 4px 10px;"><span class="glyphicon glyphicon-search" aria-hidden="true" id="searching_for"></span></button>
+                    <button type="submit" class="btn btn-warning  btn-circle" style="background-color: rgb(255, 101, 1);z-index: 2;padding: 4px 10px;"><span class="glyphicon glyphicon-search" aria-hidden="true" id="searching_for"></span></button>
 
 
                     {!! Form::close() !!}

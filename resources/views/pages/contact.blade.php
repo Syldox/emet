@@ -47,7 +47,7 @@
                                    </div>
                                </div>
                                <div class="col-md-12">
-                                   <button type="submit" class="btn btn-warning pull-right" id="btnContactUs" style="background-color: #f5861a">
+                                   <button type="submit" class="btn btn-warning pull-right" id="btnContactUs" style="background-color: #ff6501">
                                        Send Message</button>
                                </div>
                            </div>
@@ -85,7 +85,87 @@
                            var options ={
 
                                zoom:8,
-                               center:{lat:12.6500000,lng:-8.0000000}
+                               center:{lat:12.6500000,lng:-8.0000000},
+                               styles: [
+                                   {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                                   {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                                   {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                                   {
+                                       featureType: 'administrative.locality',
+                                       elementType: 'labels.text.fill',
+                                       stylers: [{color: '#d59563'}]
+                                   },
+                                   {
+                                       featureType: 'poi',
+                                       elementType: 'labels.text.fill',
+                                       stylers: [{color: '#d59563'}]
+                                   },
+                                   {
+                                       featureType: 'poi.park',
+                                       elementType: 'geometry',
+                                       stylers: [{color: '#263c3f'}]
+                                   },
+                                   {
+                                       featureType: 'poi.park',
+                                       elementType: 'labels.text.fill',
+                                       stylers: [{color: '#6b9a76'}]
+                                   },
+                                   {
+                                       featureType: 'road',
+                                       elementType: 'geometry',
+                                       stylers: [{color: '#38414e'}]
+                                   },
+                                   {
+                                       featureType: 'road',
+                                       elementType: 'geometry.stroke',
+                                       stylers: [{color: '#212a37'}]
+                                   },
+                                   {
+                                       featureType: 'road',
+                                       elementType: 'labels.text.fill',
+                                       stylers: [{color: '#9ca5b3'}]
+                                   },
+                                   {
+                                       featureType: 'road.highway',
+                                       elementType: 'geometry',
+                                       stylers: [{color: '#746855'}]
+                                   },
+                                   {
+                                       featureType: 'road.highway',
+                                       elementType: 'geometry.stroke',
+                                       stylers: [{color: '#1f2835'}]
+                                   },
+                                   {
+                                       featureType: 'road.highway',
+                                       elementType: 'labels.text.fill',
+                                       stylers: [{color: '#f3d19c'}]
+                                   },
+                                   {
+                                       featureType: 'transit',
+                                       elementType: 'geometry',
+                                       stylers: [{color: '#2f3948'}]
+                                   },
+                                   {
+                                       featureType: 'transit.station',
+                                       elementType: 'labels.text.fill',
+                                       stylers: [{color: '#d59563'}]
+                                   },
+                                   {
+                                       featureType: 'water',
+                                       elementType: 'geometry',
+                                       stylers: [{color: '#17263c'}]
+                                   },
+                                   {
+                                       featureType: 'water',
+                                       elementType: 'labels.text.fill',
+                                       stylers: [{color: '#515c6d'}]
+                                   },
+                                   {
+                                       featureType: 'water',
+                                       elementType: 'labels.text.stroke',
+                                       stylers: [{color: '#17263c'}]
+                                   }
+                               ]
                            };
 
 //            New Map

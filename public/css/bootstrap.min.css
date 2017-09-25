@@ -2476,6 +2476,7 @@ pre code {
     }
     .col-md-12 {
         width: 100%
+
     }
     .col-md-11 {
         width: 91.66666667%
@@ -3982,8 +3983,8 @@ fieldset[disabled] .btn-info:hover {
 
 .btn-warning {
     color: #fff;
-    background-color: #f0ad4e;
-    border-color: #eea236
+    background-color: #ff6700;
+    border-color: #ff6700;
 }
 
 .btn-warning.focus,
@@ -5702,8 +5703,8 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
     z-index: 3;
     color: #fff;
     cursor: default;
-    background-color: #f5861a;
-    border-color: #ffffff;
+    background-color: #ff6700;
+    border-color: #ff6700;
 }
 
 .pagination>.disabled>a,
