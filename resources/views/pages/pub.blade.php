@@ -51,11 +51,11 @@
 
                 <hr>
 
-                <h4 id="videoTitle"></h4>
-                <span id="videoViews" ></span>
-                <span id="videoLikes" ></span>
-                <span id="videoDislikes" ></span>
-                <span id="videoComments" ></span>
+                <h2 id="videoTitle"></h2>
+                <h2 id="videoViews" class="badge badge-warning btn-orange comment-title"></h2>
+                <h2 id="videoLikes" class="badge badge-warning btn-orange comment-title" ></h2>
+                <h2 id="videoDislikes" class="badge badge-warning btn-orange comment-title"></h2>
+                <h2 id="videoComments"class="badge badge-warning btn-orange comment-title" ></h2>
                 
 
 

@@ -16,7 +16,7 @@
     {{--</p>--}}
     {{--</div>--}}
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid #ff6601">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid #ff6601; width: 125%;margin-left: -143px;margin-top: -50px;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class=""></li>

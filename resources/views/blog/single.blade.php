@@ -56,20 +56,18 @@
                  */
                 (function() { // DON'T EDIT BELOW THIS LINE
                     var d = document, s = d.createElement('script');
-                    s.src = 'https://emet-1.disqus.com/embed.js';
+                    s.src = 'https://orange-mali.disqus.com/embed.js';
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            <script id="dsq-count-scr" src="//emet-1.disqus.com/count.js" async></script>
+            <script id="dsq-count-scr" src="//orange-mali.disqus.com/count.js" async></script>
 
 
 
 
-        </div>
-
-        <!-- Blog Sidebar Widgets Column -->
+            <!-- Blog Sidebar Widgets Column -->
         <div class="col-md-4">
 
             <!-- Blog Search Well -->
