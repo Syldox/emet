@@ -7,7 +7,11 @@ body{
 
 /*google maps*/
 
+.footer_text{
 
+    color: #ff6501
+
+}
 
 #map{
 
@@ -322,7 +326,7 @@ Follow me on Twitter @maridlcrmn
     background-color: #953b39;
 }
 .badge-warning {
-    background-color: #f89406;
+    background-color: #ff6601;
 }
 .badge-warning:hover {
     background-color: #c67605;
@@ -434,7 +438,13 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     line-height: 20px;
     margin: 0 0 15px;
     text-align: justify;
+
+
 }
+
+/*scrowl to top */
+
+
 
 
 

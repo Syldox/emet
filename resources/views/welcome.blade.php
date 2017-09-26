@@ -24,7 +24,7 @@
             <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="item"> <img src="images/promo/orangeb1.jpg" style="width:100%" alt="First slide">
+            <div class="item"> <img src="images/promo/service.png" style="width:100%" alt="First slide">
                 <div class="container">
                     <div class="carousel-caption">
                         {{--<h1>Reparer Vos Ordinateurs </h1>--}}
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item"> <img src="images/promo/orange-1.jpg" style="width:100%" data-src="" alt="Second    slide">
+            <div class="item"> <img src="images/promo/orange-4g.png" style="width:100%" data-src="" alt="Second    slide">
                 <div class="container">
                     <div class="carousel-caption">
                         {{--<h1>Repareation Smarte Phones </h1>--}}
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item active"> <img src="images/promo/orangeb1.jpg" style="width:100%" data-src="" alt="Third slide">
+            <div class="item active"> <img src="images/promo/orange-1.jpg" style="width:100%" data-src="" alt="Third slide">
                 <div class="container">
                     <div class="carousel-caption">
                         {{--<h1>Maintenance et Service</h1>--}}
@@ -86,7 +86,7 @@
         {{--side bar--}}
         <div class="col-md-12 ">
 
-            <p style="margin-left: 500px; margin-top: 50px"><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></p>
+            <center style=" margin-top: 50px"><a class="btn btn-lg btn-warning" href="/blog" role="button">Actualités du jour</a></center>
 
         </div>
         {{--end sidebar--}}

@@ -23,7 +23,7 @@
 
 
 
-    <h1>OrangePub</h1>
+
 
     <?php
     $api_key = 'AIzaSyDX8gAvMcopsAvbPP8MGpKrigLwUDQNFvA';
@@ -37,7 +37,7 @@
 
 
     <div class="container">
-        <div class="row" style="margin-top: 30px">
+        <div class="row" style="margin-top: -10px">
             <div class="col-md-12 col-md-8 col-sm-8 video-container">
 
                 <iframe src="https://youtube.com/embed"
@@ -49,13 +49,16 @@
 
                         frameborder="0" allowfullscreen="" width="100%" height="450px"></iframe>
 
-                <hr>
 
-                <h2 id="videoTitle"></h2>
-                <h2 id="videoViews" class="badge badge-warning btn-orange comment-title"></h2>
-                <h2 id="videoLikes" class="badge badge-warning btn-orange comment-title" ></h2>
-                <h2 id="videoDislikes" class="badge badge-warning btn-orange comment-title"></h2>
-                <h2 id="videoComments"class="badge badge-warning btn-orange comment-title" ></h2>
+                <h4 id="videoTitle"></h4>
+                <hr>
+                <span id="videoViews" class="badge badge-warning btn-orange comment-title"></span>
+
+               <div class="container" style="margin-left: 440px;margin-top: -50px;">
+                   <span id="videoLikes" class="badge badge-warning btn-orange comment-title" ></span>
+                   <span id="videoDislikes" class="badge badge-warning btn-orange comment-title"></span>
+                   <span id="videoComments"class="badge badge-warning btn-orange comment-title" ></span>
+               </div>
                 
 
 
